@@ -19,7 +19,7 @@
 
     <groupId>com.alibaba.cloud.ai</groupId>
     <artifactId>spring-ai-alibaba-admin</artifactId>
-    <version>${revision}</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Spring AI Alibaba Admin</name>
     <description>Server implementation of admin</description>
@@ -140,12 +140,12 @@
             <dependency>
                 <groupId>com.alibaba.cloud.ai</groupId>
                 <artifactId>spring-ai-alibaba-admin-server-runtime</artifactId>
-                <version>${revision}</version>
+                <version>1.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba.cloud.ai</groupId>
                 <artifactId>spring-ai-alibaba-admin-server-core</artifactId>
-                <version>${revision}</version>
+                <version>1.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>

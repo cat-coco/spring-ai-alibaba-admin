@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/liusuihui/.m2/repository/com/alibaba/cloud/ai/**)",
+      "Bash(mvn spring-boot:run -q)"
+    ]
+  }
+}

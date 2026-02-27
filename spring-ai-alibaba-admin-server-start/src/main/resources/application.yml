@@ -1,4 +1,5 @@
 server:
+  port: 8081
   compression:
     enabled: true
     mime-types: text/html,text/xml,text/plain,text/css,text/javascript
@@ -75,7 +76,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     # 支持通过环境变量覆盖，默认值用于本地开发
     # SPRING_DATASOURCE_URL, SPRING_DATASOURCE_USERNAME, SPRING_DATASOURCE_PASSWORD
-    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/admin?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai}
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3307/admin?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai}
     username: ${SPRING_DATASOURCE_USERNAME:admin}
     password: ${SPRING_DATASOURCE_PASSWORD:admin}
     druid:
@@ -98,7 +99,7 @@ spring:
       # 支持通过环境变量覆盖，默认值用于本地开发
       # SPRING_REDIS_HOST, SPRING_REDIS_PORT, SPRING_REDIS_DATABASE
       host: ${SPRING_REDIS_HOST:localhost}
-      port: ${SPRING_REDIS_PORT:6379}
+      port: ${SPRING_REDIS_PORT:6380}
       database: ${SPRING_REDIS_DATABASE:0}
   freemarker:
     cache: false
@@ -124,7 +125,7 @@ spring:
         persistence:
           jdbc:
             # 使用与 datasource 相同的配置，通过环境变量覆盖
-            url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/admin?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai}
+            url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3307/admin?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai}
             user: ${SPRING_DATASOURCE_USERNAME:admin}
             password: ${SPRING_DATASOURCE_PASSWORD:admin}
             driver: com.mysql.cj.jdbc.Driver
